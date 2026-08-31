@@ -1,0 +1,25 @@
+{
+  "name": "playwright-web-automation-framework",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Playwright + TypeScript web automation framework using Page Object Model",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:chrome": "playwright test --project=chromium",
+    "test:firefox": "playwright test --project=firefox",
+    "test:webkit": "playwright test --project=webkit",
+    "lint:types": "tsc --noEmit",
+    "report": "playwright show-report",
+    "codegen": "playwright codegen"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.62.1",
+    "@types/node": "^24.13.3",
+    "dotenv": "^16.6.1",
+    "typescript": "^5.9.3"
+  }
+}
