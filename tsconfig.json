@@ -12,7 +12,9 @@
     "baseUrl": ".",
     "paths": {
       "@pages/*": ["src/pages/*"],
-      "@utils/*": ["src/utils/*"]
+      "@utils/*": ["src/utils/*"],
+      "@fixtures/*": ["src/fixtures/*"],
+      "@data/*": ["src/test-data/*"]
     }
   },
   "include": ["playwright.config.ts", "src/**/*.ts", "tests/**/*.ts"]
